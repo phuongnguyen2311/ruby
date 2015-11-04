@@ -44,6 +44,12 @@
 		 width: 13em;
 		 background: #141;
 }
+/*#side form,div {
+		display: inline;
+}
+#side input{
+	font-size: small;
+}*/
 #side ul {
     padding: 0;
 }
@@ -60,4 +66,48 @@
 	  margin-left: 17em;
 	  padding: 1em;
 	  background: white;
+}
+#cart{
+	font-size: smaller;
+	color: white;
+}
+#cart table {
+	border-top: 1px dotted #595;
+	border-bottom: 1px dotted #595;
+	margin-bottom: 10px;
+}
+.item_title{
+	font-size: 10px;
+}
+.depot_form  fieldset {
+	background: #efe;
+} 
+.depot_form  fieldset legend{
+   color: #dfd;
+	background: #141;
+	font-family: sans-serif;
+	padding: 0.2em 1em;
+}
+.depot_form form label{
+    width: 5em;
+	float: left;
+	text-align: right;
+	padding-top: 0.2em;
+	margin-right: 0.1em;
+	display: block;
+}
+.depot_form form select, textarea, input{
+    margin-left: 0.5em;
+}
+.submit {
+	margin-left: 4em;
+}
+.depot_form form br {
+	display: none
+}
+.action_cart{
+	display: inline-block;
+}
+#cart .button_to{
+	display: inline-block;
 }

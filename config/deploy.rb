@@ -3,7 +3,7 @@
 server '103.232.120.7', port: 2222, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'https://github.com/phuongnguyen2311/ruby.git'
-set :application,     'depot'
+set :application,     'ruby'
 set :user,            'phuongnguyen2311'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
