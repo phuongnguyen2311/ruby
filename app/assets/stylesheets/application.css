@@ -9,40 +9,39 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
- *
  *= require_self
  *= require_tree .
  */
  #banner {
-	 background: #9c9;
-	 padding: 10px;
-	 border-bottom: 2px solid;
-	 font: small-caps 40px/40px "Times New Roman", serif;
-	 color: #282;
-	 text-align: center;
+	 background: #9c9 !important;
+	 padding: 10px !important;
+	 border-bottom: 2px solid !important;
+	 font: small-caps 40px/40px "Times New Roman", serif !important;
+	 color: #282 !important;
+	 text-align: center !important;
 	 
  }
 #banner img {
-	  float: left;
+	  float: left !important;
 	 }
  #notice {
 	 color: #000 !important;
-	 border: 2px solid red;
-	 padding: 1em;
-	 margin-bottom: 2em;
-	 background-color: #f0f0f0;
-	 font: bold smaller sans-serif;
+	 border: 2px solid red !important;
+	 padding: 1em !important;
+	 margin-bottom: 2em !important;
+	 background-color: #f0f0f0 !important;
+	 font: bold smaller sans-serif !important;
  }
 
  #columns {
-	 background: #141;
+	 background: #141 !important;
  }
 
 #side {
-		 float: left;
-		 padding: 1em 2em;
-		 width: 13em;
-		 background: #141;
+		 float: left !important;
+		 padding: 1em 2em !important;
+		 width: 13em !important;
+		 background: #141 !important;
 }
 /*#side form,div {
 		display: inline;
@@ -51,63 +50,68 @@
 	font-size: small;
 }*/
 #side ul {
-    padding: 0;
+    padding: 0 !important;
 }
 #side ul li {
-     list-style: none;
+     list-style: none !important;
 
 }
 #side ul li a{
-     color: #bfb;
-	 font-size: small;
+     color: #bfb !important;
+	 font-size: small !important;
 
 }
 #main {
-	  margin-left: 17em;
-	  padding: 1em;
-	  background: white;
+	  margin-left: 17em !important;
+	  padding: 1em !important;
+	  background: white !important;
 }
 #cart{
-	font-size: smaller;
-	color: white;
+	font-size: smaller !important;
+	color: white !important;
 }
 #cart table {
-	border-top: 1px dotted #595;
-	border-bottom: 1px dotted #595;
-	margin-bottom: 10px;
+	border-top: 1px dotted #595 !important;
+	border-bottom: 1px dotted #595 !important;
+	margin-bottom: 10px !important;
 }
 .item_title{
-	font-size: 10px;
+	font-size: 10px !important;
 }
 .depot_form  fieldset {
-	background: #efe;
+	background: #efe !important;
 } 
 .depot_form  fieldset legend{
-   color: #dfd;
-	background: #141;
-	font-family: sans-serif;
-	padding: 0.2em 1em;
+   color: #dfd !important;
+	background: #141 !important;
+	font-family: sans-serif !important;
+	padding: 0.2em 1em !important;
 }
 .depot_form form label{
-    width: 5em;
-	float: left;
-	text-align: right;
-	padding-top: 0.2em;
-	margin-right: 0.1em;
-	display: block;
+    width: 5em !important;
+	float: left !important;
+	text-align: right !important;
+	padding-top: 0.2em !important;
+	margin-right: 0.1em !important;
+	display: block !important;
 }
 .depot_form form select, textarea, input{
-    margin-left: 0.5em;
+    margin-left: 0.5em !important;
 }
 .submit {
-	margin-left: 4em;
+	margin-left: 4em !important;
 }
 .depot_form form br {
-	display: none
+	display: none !important;
 }
 .action_cart{
-	display: inline-block;
+	display: inline-block !important;
 }
 #cart .button_to{
-	display: inline-block;
+	display: inline-block !important;
+	-webkit-box-sizing: initial !important;
+	-moz-box-sizing:initial !important;
+	box-sizing: initial !important;
+	color:  !important;
+	
 }

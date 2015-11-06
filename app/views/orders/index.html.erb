@@ -1,15 +1,16 @@
-<p id="notice"><%= notice %></p>
-
+<% if notice %>
+   <p id="notice"><%= notice %></p>
+<% end %>
 <h1>Listing Orders</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Name</th>
       <th>Address</th>
       <th>Email</th>
       <th>Pay type</th>
-      <th colspan="3"></th>
+      <th colspan="3" style= "text-align:center">Actions</th>
     </tr>
   </thead>
 
@@ -31,3 +32,4 @@
 <br>
 
 <%= link_to 'New Order', new_order_path %>
+<p><%= will_paginate @orders %></p>

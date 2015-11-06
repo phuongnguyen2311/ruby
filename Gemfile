@@ -53,4 +53,8 @@ group :development do
 end
 
 gem 'puma'
+gem 'will_paginate', '~>3.0'
+gem "twitter-bootstrap-rails"
+gem 'bootstrap-sass', '~> 3.1.1'
+gem 'bcrypt-ruby', '3.1.2'
 

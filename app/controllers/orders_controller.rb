@@ -1,10 +1,17 @@
 class OrdersController < ApplicationController
+  skip_before_filter :authorize, only: [:new, :create]
   before_action :set_order, only: [:show, :edit, :update, :destroy]
 
   # GET /orders
   # GET /orders.json
   def index
-    @orders = Order.all
+    @cart = current_cart
+    @orders = Order.order("created_at desc").paginate(page: params[:page],per_page: 10)
+    respond_to do |format|
+      format.html
+      format.json {render json: @orders}
+    end
+
   end
 
   # GET /orders/1
@@ -38,6 +45,7 @@ class OrdersController < ApplicationController
     respond_to do |format|
       if @order.save
         Cart.destroy(session[:cart_id])
+        OrderNotifier.received(@order).deliver
         session[:cart_id] = nil
         format.html { redirect_to store_url, notice: 'Thank you for your order.' }
         format.json { render :show, status: :created, location: @order }
