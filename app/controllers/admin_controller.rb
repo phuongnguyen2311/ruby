@@ -4,4 +4,7 @@ class AdminController < ApplicationController
   end
   def demo
   end
+  def new_branch
+  	
+  end
 end
